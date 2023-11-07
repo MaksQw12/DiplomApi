@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zSW/KjOirQqRPCf+SYo8kVINA9xQou2RxsemVA5CZ0ljfzwVg6mbJAgK2lIo+NlVNg8x38q7iWAsYtG1ABqbiQ==",
+  "dgSpecHash": "yGDLz/7IQyLkfVsa4SMaiOs+pYtP+YYPskl8VBZuQ5D7t3DABbu+LOzf+3xt3pjFJoWGMtWKcSP+wAD67t9e2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\source\\repos\\DiplomBackend\\DiplomBackend\\DiplomBackend.csproj",
+  "projectFilePath": "D:\\GitHub\\DiplomApi\\DiplomBackend\\DiplomBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

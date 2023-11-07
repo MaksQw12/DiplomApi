@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\source\\repos\\DiplomBackend\\DiplomBackend\\DiplomBackend.csproj": {}
+    "D:\\GitHub\\DiplomApi\\DiplomBackend\\DiplomBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\source\\repos\\DiplomBackend\\DiplomBackend\\DiplomBackend.csproj": {
+    "D:\\GitHub\\DiplomApi\\DiplomBackend\\DiplomBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\DiplomBackend\\DiplomBackend\\DiplomBackend.csproj",
+        "projectUniqueName": "D:\\GitHub\\DiplomApi\\DiplomBackend\\DiplomBackend.csproj",
         "projectName": "DiplomBackend",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\DiplomBackend\\DiplomBackend\\DiplomBackend.csproj",
+        "projectPath": "D:\\GitHub\\DiplomApi\\DiplomBackend\\DiplomBackend.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\DiplomBackend\\DiplomBackend\\obj\\",
+        "outputPath": "D:\\GitHub\\DiplomApi\\DiplomBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

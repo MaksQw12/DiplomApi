@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 using System;
 using System.Collections.Generic;
 
@@ -16,7 +16,6 @@ public partial class Order
     [JsonIgnore]
 
     public virtual ICollection<ArchiveProduct> ArchiveProducts { get; set; } = new List<ArchiveProduct>();
-    [JsonIgnore]
 
-    public virtual BasketProduct? IdBusketProductNavigation { get; set; } 
+    public virtual BasketProduct? IdBusketProductNavigation { get; set; }
 }

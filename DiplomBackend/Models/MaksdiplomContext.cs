@@ -29,14 +29,17 @@ public partial class MaksdiplomContext : DbContext
 
     public virtual DbSet<Product> Products { get; set; }
 
+    public virtual DbSet<ProductPhoto> ProductPhotos { get; set; }
+
     public virtual DbSet<Supplier> Suppliers { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=sql.bsite.net\\MSSQL2016;Database=maksdiplom_;User Id=maksdiplom_;Password=123;  trustServerCertificate=true").UseLazyLoadingProxies();
-        optionsBuilder.UseLazyLoadingProxies(false);
+         optionsBuilder.UseSqlServer("Server=sql.bsite.net\\MSSQL2016;Database=maksdiplom_;User Id=maksdiplom_;Password=123;  trustServerCertificate=true").UseLazyLoadingProxies();
+      
+
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -114,7 +117,6 @@ public partial class MaksdiplomContext : DbContext
         {
             entity.ToTable("Product");
 
-            entity.Property(e => e.Photo).HasColumnType("image");
             entity.Property(e => e.Price).HasColumnType("decimal(18, 0)");
 
             entity.HasOne(d => d.IdCategoryNavigation).WithMany(p => p.Products)
@@ -126,6 +128,20 @@ public partial class MaksdiplomContext : DbContext
                 .HasForeignKey(d => d.IdSupplier)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Product_Suppliers");
+        });
+
+        modelBuilder.Entity<ProductPhoto>(entity =>
+        {
+            entity.HasKey(e => e.ProductId);
+
+            entity.ToTable("ProductPhoto");
+
+            entity.Property(e => e.ProductId).ValueGeneratedNever();
+
+            entity.HasOne(d => d.Product).WithOne(p => p.ProductPhoto)
+                .HasForeignKey<ProductPhoto>(d => d.ProductId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_ProductPhoto_Product");
         });
 
         modelBuilder.Entity<User>(entity =>

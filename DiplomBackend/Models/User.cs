@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 using System;
 using System.Collections.Generic;
 
@@ -12,7 +12,6 @@ public partial class User
 
     public string Email { get; set; } = null!;
     [JsonIgnore]
-
     public virtual ICollection<ArchiveProduct> ArchiveProducts { get; set; } = new List<ArchiveProduct>();
     [JsonIgnore]
 

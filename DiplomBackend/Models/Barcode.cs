@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 using System;
 using System.Collections.Generic;
 
@@ -11,6 +11,7 @@ public partial class Barcode
     public string Code { get; set; } = null!;
 
     public int IdProduct { get; set; }
-    [JsonIgnore]
+
+
     public virtual Product? IdProductNavigation { get; set; }
 }

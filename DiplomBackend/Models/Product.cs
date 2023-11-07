@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 using System;
 using System.Collections.Generic;
 
@@ -12,8 +12,6 @@ public partial class Product
 
     public string? Description { get; set; }
 
-    public byte[]? Photo { get; set; }
-
     public decimal Price { get; set; }
 
     public int Count { get; set; }
@@ -23,16 +21,19 @@ public partial class Product
     public int IdCategory { get; set; }
 
     public int IdSupplier { get; set; }
-
     [JsonIgnore]
+
     public virtual ICollection<Barcode> Barcodes { get; set; } = new List<Barcode>();
     [JsonIgnore]
 
     public virtual ICollection<BasketProduct> BasketProducts { get; set; } = new List<BasketProduct>();
     [JsonIgnore]
 
-    public virtual CategoryProduct? IdCategoryNavigation { get; set; } 
+    public virtual CategoryProduct? IdCategoryNavigation { get; set; }
     [JsonIgnore]
 
-    public virtual Supplier? IdSupplierNavigation { get; set; } 
+    public virtual Supplier? IdSupplierNavigation { get; set; }
+
+
+    public virtual ProductPhoto? ProductPhoto { get; set; }
 }

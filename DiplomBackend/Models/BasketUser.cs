@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 using System;
 using System.Collections.Generic;
 
@@ -9,10 +9,9 @@ public partial class BasketUser
     public int Id { get; set; }
 
     public int IdUser { get; set; }
+    [JsonIgnore]
 
-    [JsonIgnore]
     public virtual ICollection<BasketProduct> BasketProducts { get; set; } = new List<BasketProduct>();
-    [JsonIgnore]
 
     public virtual User? IdUserNavigation { get; set; }
 }
