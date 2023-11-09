@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using DiplomBackend.Models;
+using System.Net;
+using System.Configuration;
+using Microsoft.AspNetCore.Cors;
 
 namespace DiplomBackend.Controllers
 {
@@ -24,7 +27,10 @@ namespace DiplomBackend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-          if (_context.Users == null)
+
+         
+
+            if (_context.Users == null)
           {
               return NotFound();
           }

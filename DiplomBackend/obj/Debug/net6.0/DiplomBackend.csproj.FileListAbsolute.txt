@@ -536,3 +536,8 @@ D:\GitHub\DiplomApi\DiplomBackend\obj\Debug\net6.0\refint\DiplomBackend.dll
 D:\GitHub\DiplomApi\DiplomBackend\obj\Debug\net6.0\DiplomBackend.pdb
 D:\GitHub\DiplomApi\DiplomBackend\obj\Debug\net6.0\DiplomBackend.genruntimeconfig.cache
 D:\GitHub\DiplomApi\DiplomBackend\obj\Debug\net6.0\ref\DiplomBackend.dll
+D:\GitHub\DiplomApi\DiplomBackend\bin\Debug\net6.0\System.Web.Cors.dll
+D:\GitHub\DiplomApi\DiplomBackend\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+D:\GitHub\DiplomApi\DiplomBackend\bin\Debug\net6.0\System.Web.Http.dll
+D:\GitHub\DiplomApi\DiplomBackend\bin\Debug\net6.0\System.Web.Http.Cors.dll
+D:\GitHub\DiplomApi\DiplomBackend\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
